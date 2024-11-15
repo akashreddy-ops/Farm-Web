@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Marketplace</title>
+  <link rel="stylesheet" href="market.css">
+</head>
+<body>
+  <header>
+    <h1>Online Marketplace</h1>
+    <nav>
+      <a href="http://127.0.0.1:3000/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/index.html">Products</a>
+      <a href="http://127.0.0.1:3000/cart.html">Cart</a>
+      <a href="http://127.0.0.1:3000/payment.html">Payment</a>
+      <a href="http://127.0.0.1:3000/contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="https://www.shutterstock.com/image-photo/farmer-hands-gloves-holding-bunch-260nw-2474886725.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>₹10.00</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230904/pngtree-the-fruits-are-all-together-in-a-pile-image_13181607.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>₹20.00</p>
+        <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Simple Marketplace</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

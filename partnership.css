@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .partnerships-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .partnerships-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  
+  .partners-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .partner {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .partner img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .partner p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  
+  .partner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  

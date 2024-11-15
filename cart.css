@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  /* Product List Styles */
+  .product-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .product h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  /* Cart Section Styles */
+  .cart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    position: sticky;
+    top: 20px;
+  }
+  
+  .cart h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .checkout {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .checkout:hover {
+    background-color: #0056b3;
+  }
+  

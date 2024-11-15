@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139104.jpg);
+        }
+        .contact-container {
+            background-color: none transparent;
+            padding: 20px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .contact-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-container textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .contact-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-container button:hover {
+            background-color: #45a049;
+        }
+        .success-message {
+            display: none;
+            color: green;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form onsubmit="showSuccessMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p class="success-message" id="successMessage">Your message has been sent successfully!</p>
+    </div>
+
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault(); // Prevent form submission
+            document.getElementById("successMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
